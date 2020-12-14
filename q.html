@@ -17,9 +17,9 @@
             var s = myform.address.value;
             var o = s.match(p);
 
-            var n = myform.name.value; 
+            var n = myform.name.value;  /* 名前 */
 
-            var z = myform.contents.value;
+            var z = myform.contents.value;  /* 問い合わせ内容 */
 
             if (n == "") {
                 window.alert("名前を入力してください。");
@@ -35,11 +35,11 @@
                 res = false;
             }
 
-            else if(z == "") {
+            else if (z == "") {
                 window.alert("お問い合わせ内容を入力してください。");
                 res = false;
             }
-            
+
             else {
                 window.alert("送信します。");
                 res = true;
@@ -83,7 +83,7 @@
                     <input type="text" class="form-control" name="name" placeholder="氏名を入力して下さい。">
                 </div>
             </div>
-            
+
             <div class="form-row justify-content-center m-2">
                 <div class="col-5">
                     <label class="float-left">メールアドレス</label>
@@ -104,25 +104,25 @@
         </form>
 
 
-    <!--フッター-->
-    <footer class="Sticky bottom text-white bg-dark">
-        <br>
-        <hr>
-        <div class="m-0 p-2 text-center">
-            <a href="#" class="text-white col-auto">お問い合わせ</a>
-            <a href="#" class="text-white col-auto">広告掲載依頼</a>
-            <a href="#" class="text-white col-auto">利用規約</a>
+        <!--フッター-->
+        <footer class="Sticky bottom text-white bg-dark">
             <br>
-            <br>
-            <a href="#" class="text-white col-auto">プライバシーポリシー</a>
-        </div>
-        <hr>
-        <div class="text-center">
-            <small class="text-center">
-                Copyright © 2020 Allowance(仮) All Rights Reserved.
-            </small>
-        </div>
-    </footer>
+            <hr>
+            <div class="m-0 p-2 text-center">
+                <a href="#" class="text-white col-auto">お問い合わせ</a>
+                <a href="#" class="text-white col-auto">広告掲載依頼</a>
+                <a href="#" class="text-white col-auto">利用規約</a>
+                <br>
+                <br>
+                <a href="#" class="text-white col-auto">プライバシーポリシー</a>
+            </div>
+            <hr>
+            <div class="text-center">
+                <small class="text-center">
+                    Copyright © 2020 Allowance(仮) All Rights Reserved.
+                </small>
+            </div>
+        </footer>
 
 
 </body>
