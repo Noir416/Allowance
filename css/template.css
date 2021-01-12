@@ -11,10 +11,11 @@ body {
     grid-template: "header header header header header" auto "slide  slide  slide  slide  slide " auto "...... ...... ...... ...... ......" 20px "...... title  title  title  ......" auto "...... ...... ...... ...... ......" 20px "...... left   center right  ......" auto "...... ...... ...... ...... ......" 20px "footer footer footer footer footer" auto / 40px 1fr 2fr 1fr 40px;
 }
 
+
 header {
     grid-area: header;
     /* background-color: red ; */
-    height: 56px;
+    height: 70px;
 }
 
 header div.pull-right a {
