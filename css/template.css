@@ -8,7 +8,7 @@ body {
     min-height: 100vh;
     background-color: #d0e0e3ff;
     display: grid;
-    grid-template: "header header header header header" auto "slide  slide  slide  slide  slide " auto "...... ...... ...... ...... ......" 20px "...... title  title  title  ......" auto "...... ...... ...... ...... ......" 20px "...... left   center right  ......" auto "...... ...... ...... ...... ......" 20px "footer footer footer footer footer" auto / 40px 1fr 2fr 1fr 40px;
+    grid-template: "header header header header header" auto    "slide  slide  slide  slide  slide " auto "...... ...... ...... ...... ......" 20px "...... title  title  title  ......" auto "...... ...... ...... ...... ......" 20px "...... left   center right  ......" auto "...... ...... ...... ...... ......" 20px "footer footer footer footer footer" auto / 40px 1fr 4fr 1fr 40px;
 }
 
 
