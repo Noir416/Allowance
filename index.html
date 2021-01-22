@@ -70,12 +70,12 @@
     <!-- コンテンツ -->
     <main class="">
         <!--エリア選択ボタン-->
-        <select name="prefecture" id="pref" class="m-5 p-2 btn btn-info">
+        <select name="prefecture" id="pref" class="m-5 p-2 btn btn-info" style="width: 140px; font-size: 11px;">
             <option value="" selected>エリアを選択</option>
-            <optgroup label="北海道地方" class="btn-warning">
+            <optgroup label="北海道地方" class="bg-info">
                 <option value="北海道" class="text-white">北海道</option>
             </optgroup>
-            <optgroup label="東北地方" class="btn-warning">
+            <optgroup label="東北地方" class="bg-info">
                 <option value="青森県" class="text-white">青森県</option>
                 <option value="岩手県" class="text-white">岩手県</option>
                 <option value="宮城県" class="text-white">宮城県</option>
@@ -83,7 +83,7 @@
                 <option value="山形県" class="text-white">山形県</option>
                 <option value="福島県" class="text-white">福島県</option>
             </optgroup>
-            <optgroup label="関東地方" class="btn-warning">
+            <optgroup label="関東地方" class="bg-info">
                 <option value="茨城県" class="text-white">茨城県</option>
                 <option value="栃木県" class="text-white">栃木県</option>
                 <option value="群馬県" class="text-white">群馬県</option>
@@ -92,7 +92,7 @@
                 <option value="東京都" class="text-white">東京都</option>
                 <option value="神奈川県" class="text-white">神奈川県</option>
             </optgroup>
-            <optgroup label="中部地方" class="btn-warning">
+            <optgroup label="中部地方" class="bg-info">
                 <option value="新潟県" class="text-white">新潟県</option>
                 <option value="富山県" class="text-white">富山県</option>
                 <option value="石川県" class="text-white">石川県</option>
@@ -103,7 +103,7 @@
                 <option value="静岡県" class="text-white">静岡県</option>
                 <option value="愛知県" class="text-white">愛知県</option>
             </optgroup>
-            <optgroup label="近畿地方" class="btn-warning">
+            <optgroup label="近畿地方" class="bg-info">
                 <option value="三重県" class="text-white">三重県</option>
                 <option value="滋賀県" class="text-white">滋賀県</option>
                 <option value="京都府" class="text-white">京都府</option>
@@ -112,20 +112,20 @@
                 <option value="奈良県" class="text-white">奈良県</option>
                 <option value="和歌山県" class="text-white">和歌山県</option>
             </optgroup>
-            <optgroup label="中国地方" class="btn-warning">
+            <optgroup label="中国地方" class="bg-info">
                 <option value="鳥取県" class="text-white">鳥取県</option>
                 <option value="島根県" class="text-white">島根県</option>
                 <option value="岡山県" class="text-white">岡山県</option>
                 <option value="広島県" class="text-white">広島県</option>
                 <option value="山口県" class="text-white">山口県</option>
             </optgroup>
-            <optgroup label="四国地方" class="btn-warning">
+            <optgroup label="四国地方" class="bg-info">
                 <option value="徳島県" class="text-white">徳島県</option>
                 <option value="香川県" class="text-white">香川県</option>
                 <option value="愛媛県" class="text-white">愛媛県</option>
                 <option value="高知県" class="text-white">高知県</option>
             </optgroup>
-            <optgroup label="九州・沖縄地方" class="btn-warning">
+            <optgroup label="九州・沖縄地方" class="bg-info">
                 <option value="福岡県" class="text-white">福岡県</option>
                 <option value="佐賀県" class="text-white">佐賀県</option>
                 <option value="長崎県" class="text-white">長崎県</option>
@@ -136,10 +136,60 @@
                 <option value="沖縄県" class="text-white">沖縄県</option>
             </optgroup>
         </select>
-        <select name="job" id="job" class="m-3 p-2 btn btn-info">
+        <select name="job" id="job" class="m-1 p-2 btn btn-info" style="width: 200px; font-size: 11px;">
             <option value="" selected>職種を選択</option>
+            <optgroup label="接客/サービス" class="bg-info">
+                <option value="家事代行" class="text-white">家事代行</option>
+                <option value="清掃" class="text-white">清掃</option>
+                <option value="ベビーシッター" class="text-white">ベビーシッター</option>
+                <option value="洗車" class="text-white">洗車</option>
+                <option value="その他サービス" class="text-white">その他サービス</option>
+            </optgroup>
+            <optgroup label="物流/配送" class="bg-info">
+                <option value="ドライバー助手" class="text-white">ドライバー助手</option>
+                <option value="配達・配送" class="text-white">配達・配送</option>
+                <option value="引越し" class="text-white">引越し</option>
+                <option value="その他物流/配送" class="text-white">その他物流/配送</option>
+            </optgroup>
+            <optgroup label="軽作業" class="bg-info">
+                <option value="倉庫・検品" class="text-white">倉庫・検品</option>
+                <option value="在庫管理・商品管理" class="text-white">在庫管理・商品管理</option>
+                <option value="仕分け" class="text-white">仕分け</option>
+                <option value="品だし・ピッキング" class="text-white">品だし・ピッキング</option>
+            </optgroup>
+            <optgroup label="事務" class="bg-info">
+                <option value="一般事務" class="text-white">一般事務</option>
+                <option value="経理事務" class="text-white">経理事務</option>
+                <option value="営業事務" class="text-white">営業事務</option>
+                <option value="伝票整理・資料作成" class="text-white">伝票整理・資料作成</option>
+                <option value="電話対応" class="text-white">電話対応</option>
+                <option value="事務関連派遣職" class="text-white">事務関連派遣職</option>
+                <option value="その他事務" class="text-white">その他事務</option>
+            </optgroup>
+            <optgroup label="IT/コンピュータ" class="bg-info">
+                <option value="SE（システムエンジニア）" class="text-white">SE（システムエンジニア）</option>
+                <option value="プログラマー" class="text-white">プログラマー</option>
+                <option value="データ入力・PC入力" class="text-white">データ入力・PC入力</option>
+                <option value="ユーザーサポート" class="text-white">ユーザーサポート</option>
+                <option value="OA・パソコンインストラクター" class="text-white">OA・パソコンインストラクター</option>
+                <option value="IT系派遣職" class="text-white"> IT系派遣職</option>
+                <option value="デバッガー" class="text-white">デバッガー</option>
+                <option value="その他コンピュータ関連職" class="text-white">その他コンピュータ関連職</option>
+            </optgroup>
+            <optgroup label="専門職/その他" class="bg-info">
+                <option value="クリエイター" class="text-white">クリエイター</option>
+                <option value="WEBデザイナー" class="text-white">WEBデザイナー</option>
+                <option value="デザイナー・イラストレーター" class="text-white">デザイナー・イラストレーター</option>
+                <option value="グラフィックデザイナー" class="text-white">グラフィックデザイナー</option>
+                <option value="編集・記者・ライター" class="text-white">造園・庭師</option>
+                <option value="アンケート・モニター" class="text-white">アンケート・モニター</option>
+                <option value="通訳・翻訳" class="text-white">通訳・翻訳</option>
+                <option value="整備士" class="text-white">整備士</option>
+                <option value="その他派遣職" class="text-white">その他派遣職</option>
+                <option value="その他専門職" class="text-white">その他専門職</option>
+            </optgroup>
         </select>
-        <input type="submit" class="m-5 p-2 btn btn-primary" name="submit" value="検索">
+        <input type="submit" class="m-5 p-2 btn btn-primary" name="submit" value="検索" style="font-size: 11px;">
 
         <!-- 仕事 -->
         <!--ボタンのグループ化-->
@@ -207,8 +257,8 @@
             </div>
             <div class="mb-3 p-3 bg-light shadow-sm rounded">
                 <p>
-                    人気の職種から探す
-                    <br>
+                    人気の職種から探す<br>
+                    <a href="#">・</a>
                     <br>
                     <br>
                     <br>
@@ -221,8 +271,8 @@
             </div>
             <div class="mb-3 p-3 bg-light shadow-sm rounded">
                 <p>
-                    仕事内容
-                    <br>
+                    仕事内容<br>
+                    <a href="#">・</a>
                     <br>
                     <br>
                     <br>
